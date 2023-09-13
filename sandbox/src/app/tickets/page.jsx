@@ -1,12 +1,16 @@
-export default function tickets() {
+import TicketList from "./TicketsList";
+
+export default function Tickets() {
     return (
-        <main className="flex 
-                        min-h-screen 
-                        flex-col 
-                        items-center 
-                        justify-between 
-                        p-24">
-            <h2>Tickets</h2>
+        <main>
+            <nav>
+                <div>
+                <h2>Tickets</h2>
+                    <p><small>Currently open tickets.</small></p>
+                </div>
+            </nav>
+
+            <TicketList />
         </main>
     )
 }
